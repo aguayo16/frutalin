@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'lora', serif;
+}
+
+.nav {
+    position:fixed;
+    background-color: #efefef;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo{
+    color: #3cb815;
+    font-size:2.5rem;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: 700;
+    font-family: 'lora', serif;
+}
+
+.logo span{
+    color: orange
+}
+
+.nav ul{
+    float: right;
+    margin-right: 40px;
+
+}
+
+.nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+    font-family: sans-serif;
+}
+
+.nav ul li a{
+    color: black;
+    font-weight: 500;
+    font-size: 17px;
+    transition: .3s ease;
+}
+
+.nav ul li a:hover, .active{
+    color: red !important;
+}
+.nav ul li a .fa{
+    color: green;
+}
+.nav ul li a .fa:hover{
+    color: red;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: all .3s;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+.image_slider {
+    overflow: hidden;
+}
+img{
+   opacity: .6;
+}
+
+.image_container {
+    margin-top: 80px;
+    background: black;
+}
+
+.captions {
+    position: absolute;
+    z-index: 1;
+    width: 55%;
+    height: auto;
+    top: 285px;
+    left: 80px;
+    font-weight: bold;
+}
+
+.captions h1{
+    justify-content: flex-start;
+    font-family: 'lora', serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: white;
+    line-height: 80px;
+}
+
+.captions p{
+    font-size: 17px;
+    padding-top: 10px;
+    font-weight: 300;
+    line-height: 26px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.captions .button{
+    position: absolute;
+    padding: 40px;
+    display: block;
+    
+}
+
+.captions .btn-1{
+    width:160;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.2rem;
+    
+    margin-right: 12px;
+    background: #3cb815;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.captions .btn-1:hover{
+    opacity: .9;
+}
+
+.captions .btn-2{
+    width:160;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.2rem;
+    margin-right: 12px;
+    background: orange;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.captions .btn-2:hover{
+    opacity: .9;
+}
+
+@media (max-width: 780px) {
+    .checkbtn {
+        display: block;
+    }
+    .nav ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: inherit;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: al .5s;
+    }
+
+    .nav ul  li{
+        display: block;
+        line-height: 50px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .nav ul li .fa {
+        display: none;
+    }
+
+    .nav ul li a:hover {
+        padding: 10px 20px;
+        background-color: #3cb815;
+        border-radius: 5px;
+        color: white !important;
+    }
+
+    .nav ul li a:hover {
+        padding: 10px 20px;
+        background-color: #3cb815;
+        border-radius: 5px;
+        color: white !important;
+    }
+
+    .nav ul li a:active {
+        background-color: blue; 
+    }
+
+    .nav ul li a{
+        font-size: 20px;
+    }
+
+    .nav ul{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-top: 2px solid rgba(224,224,224);
+    }
+
+
+}
+
+

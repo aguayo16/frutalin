@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+div{
+    height: auto;
+}
+
+
+
+.container {
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Source Sans Pro", sans-serif;
+    
+}
+
+.title{
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7143;
+    margin-bottom: 0.857em;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.title:before, .title:after {
+    content: " - ";
+}
+
+p{
+    line-height: 3;
+}
+
+.map-container{
+    display: flex;
+    width:50%
+    
+    
+}
+iframe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+   
+}
+
+
+
